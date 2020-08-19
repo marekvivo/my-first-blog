@@ -28,8 +28,8 @@
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse">
-      <ul class="nav navbar-nav" id="topNavBar">
+    <div class="collapse navbar-collapse" id="topNavBar">
+      <ul class="nav navbar-nav" >
         <li class="navElement {% if request.path == postList %} active {% endif %} "><a href="{% url 'post_list' %}">Home</a></li>
         {% if user.is_authenticated %}
         <li class="navElement {% if request.path == postNew %} active {% endif %} "><a href="{% url 'post_new' %}">New Post</a></li>
